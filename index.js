@@ -12,7 +12,7 @@ const stripe = require("stripe")(process.env.E_COMMERCE_SECRET_KEY)
 app.use(express.json());
 app.use(cors(
     {
-        origin: [],
+        origin: [""],
         method: ["POST","GET"],
         credentials: true
     }
